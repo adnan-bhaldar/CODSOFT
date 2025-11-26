@@ -1,2 +1,2 @@
 # CODSOFT
-CODSOFT Responsive for internship projects
+- CODSOFT Responsive for internship projects
