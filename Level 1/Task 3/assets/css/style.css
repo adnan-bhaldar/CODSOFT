@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.calculator {
+    border: none;
+    background-color: #f7f7f7;
+    padding: 25px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#screen {
+    border-radius: 10px;
+    border: none;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.15);
+    font-size: 2.5em;
+    height: 80px;
+    width: 380px;
+    text-align: right;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    background-color: #e8e8e8;
+    color: #333;
+    outline: none;
+}
+
+table {
+    margin: auto;
+}
+
+button {
+    border-radius: 15px;
+    font-size: 1.8em;
+    width: 80px;
+    height: 80px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.1s;
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+table tr td:last-child button,
+table tr:first-child td:nth-child(3) button,
+table tr:first-child td:nth-child(4) button,
+table tr:nth-child(5) td:nth-child(3) button {
+    background-color: #ff9800;
+    color: white;
+}
+
+table tr td:last-child button:hover,
+table tr:first-child td:nth-child(3) button:hover,
+table tr:first-child td:nth-child(4) button:hover,
+table tr:nth-child(5) td:nth-child(3) button:hover {
+    background-color: #e68900;
+}
+
+table tr:last-child td:last-child button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table tr:last-child td:last-child button:hover {
+    background-color: #45a049;
+}
